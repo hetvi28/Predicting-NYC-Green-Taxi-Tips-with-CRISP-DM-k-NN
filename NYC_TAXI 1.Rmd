@@ -1,12 +1,11 @@
 ---
-title: "Practicum 3"
+title: "NYC Green Taxi Tips"
 output: html_document
 date: "2025-04-08"
 ---
 
-For Practicum 3, we will be using the same dataset **NYC Green Taxis from 2018**. Our main objective is to evaluate the factors that contribute toward cab drivers being incentivized (i.e what determines whether or not they receive a tip).
+For this project, we will be using the  dataset **NYC Green Taxis from 2018**. Our main objective is to evaluate the factors that contribute toward cab drivers being incentivized (i.e what determines whether or not they receive a tip).
 
-## Question 1
 
 #### CRISP-DM: Data Understanding 
 
@@ -592,11 +591,9 @@ ggplot(tripdata_df, aes(x = trip_duration, y = tip_amount)) +
 ```
 
 The Pearson correlation coefficient between Trip Duration and Tip Amount is 0.01191982. It indicates a very weak positive linear relationship. This means that as the trip duration increases, there is only a minimal tendency for the tip amount to increase. The relationship is so weak that, for practical purposes, trip_duration and tip_amount can be considered uncorrelated. The scatter plot also supports this conclusion. Therefore, `trip_duration` should not be used as a predictor for `tip_amount.` 
+ 
 
-
-## Question 2 
-
-#### CRISP-DM: Data Preparation
+### CRISP-DM: Data Preparation
 
 #### 2.1 Data preprocessing
 
@@ -794,9 +791,9 @@ We set random seed for reproducibility. The `data_train` has 80% of the total da
 The training set (80%) is used to "teach" the KNN model—this is where it stores all the examples it will later use to find the k-nearest neighbors when making predictions. The testing set (20%) is used to evaluate the model's performance on unseen data, simulating how it would perform in a real-world setting. We chose a 80-20 split offers a good balance: there's enough data to train a robust model, while still retaining enough data to reliably test and assess performance. Having a solid 80% training pool gives the model more neighbors to choose from, improving accuracy.
 
 
-## Question 3
+##
 
-#### CRISP-DM: Modeling
+## CRISP-DM: Modeling
 
 In this step we will develop the k-nn regression model. Create a function with the following name and arguments: knn.predict(data_train, data_test, k);
 
@@ -846,9 +843,9 @@ We set the number of neighbors k = 5 and get the Mean Squared Error = 0.10032086
 Considering that tip amounts are often difficult to predict in reality, this level of accuracy is quite good. Tipping behavior is influenced not only by fare-related data, but also by subjective factors like the passenger’s satisfaction, driver attitude, comfort during the ride, or even mood and cultural habits—all of which are difficult to be captured in the dataset. Given these limitations, achieving an MSE this low suggests that the model is doing a solid job based on the available features. This k-NN regression model demonstrates a strong prediction power, oﬀering a reliable foundation for understanding and estimating taxi tip amounts.
 
 
-## Question 4 
 
-#### CRISP-DM: Evaluation
+
+## CRISP-DM: Evaluation
 
 Determine the best value of k and visualize the MSE. This step requires selecting different values of k and evaluating which produced the lowest MSE. 
 

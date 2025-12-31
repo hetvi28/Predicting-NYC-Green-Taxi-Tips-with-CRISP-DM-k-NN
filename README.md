@@ -99,6 +99,22 @@ All charts include:
 - Labeled axes with units
 - Captions explaining the chart's purpose
 
+## Business Questions Answered:
+- What factors influence whether passengers tip taxi drivers?
+- How can the NYC TLC incentivize drivers and improve service quality?
+- What trip characteristics predict higher tip amounts?
+- Which routes or locations generate the most tips?
+- How can drivers maximize their earnings through better understanding of tipping patterns?
+- What payment methods correlate with higher tip amounts?
+- Does trip distance, time of day, or pickup location affect tipping behavior?
+
+## Business Answered
+Business Impact:
+
+- Helps drivers optimize routes and service for better earnings
+- Enables TLC to design policies that improve driver retention
+- Provides insights for demand-based pricing strategies
+  
 ## Presentation
 
 A 15-minute presentation summarizing this analysis was delivered on [Date]. The presentation focused on:

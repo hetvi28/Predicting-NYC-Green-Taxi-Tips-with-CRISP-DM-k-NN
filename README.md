@@ -66,19 +66,7 @@ library(FNN)  # or class package for k-NN
 library(dplyr)
 library(corrplot)
 library(scales)
-```
-
-## Project Structure
-
-.
-├── README.md
-├── Practicum3.Rmd           # Main R Markdown file with analysis
-├── Practicum3.html          # Knitted HTML output
-├── data/
-│   └── green_taxi_2018.csv  # Raw data (not included in repo)
-├── figures/                 # Generated visualizations
-└── presentation/            # Presentation slides
-
+``
 
 
 2. **Download the data:**
